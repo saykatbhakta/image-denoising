@@ -1,0 +1,40 @@
+
+    <nav class="nav_section">
+        <div class="nav_logo">
+            <h1><span class="clear">Clear</span><span class="pixel">Pixel</span></h1>
+        </div>
+        <div class="nav_items">
+            <ul>
+                <li><a href="/homes">Home</a></li>
+                <li>
+                    <a class="toggle" href="#">Denoising <i class="fa-solid fa-caret-down"></i></a>
+                    <div class="dropdown_menu display">
+                        <ul>
+                            <li><a href="/upload">Spatial</a></li>
+                            <li><a href="/upload">Linear</a></li>
+                            <li><a href="/upload">Mean</a></li>
+                            <li><a href="/upload">Weiner</a></li>
+                            <li><a href="/upload">Non Linear</a></li>
+                            <li><a href="/upload">Median</a></li>
+                            <li><a href="/upload">Transform Domain</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="/help">Help</a></li>
+                <li><a href="/contact">Contact</a></li>
+
+            </ul>
+            <div class="login">
+                <% if(!currUser) { %>
+                    <a href="/login" class="btn log">Login</a>
+                    <a href="/signup" class="btn sign">Sign Up</a>
+                    <% } %>
+                        <% if(currUser) { %>
+                            <a href="/logout" class="btn sign">Log out</a>
+                            <% } %>
+
+
+            </div>
+
+        </div>
+    </nav>

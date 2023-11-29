@@ -1,0 +1,24 @@
+<% layout("/layouts/boilerplate") %>
+  <div class="signup_body">
+    <div class="form_container">
+      <form class="sign-up_form" action="/login" method="POST">
+        <h1>Sign in</h1>
+        <div class="input-group flex-nowrap">
+          <label for="username" class="input-group-text" id="addon-wrapping"><i class="fa-solid fa-user"></i></label>
+          <input type="text" name="username" class="form-control" id="username" placeholder="Username" />
+        </div>
+        <div class="input-group flex-nowrap">
+          <label for="password" class="input-group-text" id="addon-wrapping"><i class="fa-solid fa-key"></i></label>
+          <input type="password" name="password" class="form-control" id="password" placeholder="Password" />
+        </div>
+        <button class="btn btn-lg">Login</button>
+
+        <div class="sign-up">
+          <a href="#" id="forgot">Forgot Password?</a>
+          <a href="/signup" id="sign">Sign up</a>
+        </div>
+        
+      </form>
+    </div>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" />
+  </div>

@@ -1,0 +1,52 @@
+<% layout("/layouts/boilerplate") %>
+    <div class="row mt-4 con-bg">
+        <div class="col-8 offset-2 ">
+            <br><br>
+            <h3>Contact Us</h3>
+            <form action="#" class="needs-validation" novalidate enctype="multipart/form-data">
+
+                <div class="mb-3">
+                    <label for="title" class="form-label">Name</label>
+                    <input type="text" id="num" name="name" placeholder="Enter your name" class="form-control"
+                        required>
+                    <div class="valid-feedback">Title looks good! </div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="title" class="form-label">Phone Number</label>
+                    <input type="number" id="num" name="number" placeholder="Enter your phone-num" class="form-control"
+                        required>
+                    <div class="valid-feedback">Title looks good! </div>
+                </div>
+                <div class="mb-3">
+                    <label for="title" class="form-label">Email Id</label>
+                    <input type="email" id="num" name="email" placeholder="Enter Email Id" class="form-control"
+                        required>
+                    <div class="invalid-feedback">Please enter your email! </div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="description" class="form-label">Your Message</label>
+                    </textarea>
+                    <textarea name="description" id="num" class="form-control" required></textarea>
+                    <div class="invalid-feedback">
+                        Please enter a short message.
+                    </div>
+
+
+                    <div class="mb-3">
+                        <label for="location" class="form-label">Location</label>
+                        <input type="text" id="num" name="listing[location]" placeholder=" West Bengal , India"
+                            class="form-control" required>
+                        <div class="invalid-feedback">
+                            Please enter the location.
+                        </div>
+                    </div>
+
+
+
+                <button class="btn btn-dark add-btn mt-3">Submit</button>
+                <br><br>
+            </form>
+        </div>
+    </div>
